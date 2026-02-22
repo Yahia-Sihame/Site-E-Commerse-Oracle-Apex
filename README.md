@@ -87,25 +87,65 @@ Through this project, I strengthened my understanding of:
 
 
 
-🚀 How to Run & Test
-Follow these steps to deploy the project on your Oracle APEX instance:
+## 🚀 How to Run & Test the Project
 
-1️⃣ Prerequisites
-Access to an Oracle APEX Workspace.
+Follow the steps below to deploy and test the system on your Oracle APEX environment.
 
-Oracle Database 19c or higher.
+---
 
-2️⃣ Database Setup
-Navigate to SQL Workshop > SQL Scripts > Upload.
+### 1️⃣ Prerequisites
 
-Upload and run database_schema.sql from the /database folder.
+Before starting, make sure you have:
 
-This will create all necessary Tables, Sequences, and Triggers.
+- Access to an **Oracle APEX Workspace**
+- An **Oracle Database 19c (or higher)** instance
+- Required privileges to create tables, triggers, and sequences
 
-3️⃣ Application Import
-Go to App Builder > Import.
+---
 
-Upload the .sql file from the /application folder.
+### 2️⃣ Database Setup
 
-Follow the wizard to install the application in your schema.
-If you encounter any "Table not found" errors, double-check that the database_schema.sql script was executed successfully before importing the application.
+1. Log in to your Oracle APEX Workspace.
+2. Navigate to:  
+   **SQL Workshop → SQL Scripts → Upload**
+3. Upload the file:
+
+/database/database_schema.sql
+
+4. Run the script.
+
+This will automatically create:
+
+- All required tables  
+- Primary & Foreign key constraints  
+- Sequences  
+- PL/SQL Triggers  
+
+Once completed, your database structure will be fully configured.
+
+---
+
+### 3️⃣ Application Import
+
+1. Go to:  
+   **App Builder → Import**
+2. Upload the application export file located in:
+
+application
+
+3. Follow the installation wizard.
+4. Select your target schema.
+5. Complete the installation process.
+
+After installation, the application will be ready to run and test.
+
+---
+
+### ✅ System Ready
+
+Once both steps are completed successfully, you can launch the application from App Builder and start testing all features including:
+
+- Product Management  
+- Order Processing  
+- Data Integrity Automation  
+- Backend Logic Execution  
