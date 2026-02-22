@@ -84,38 +84,28 @@ Through this project, I strengthened my understanding of:
 - Data integrity enforcement  
 - Bridging database logic with web applications
 
-🚀 Getting Started (How to Run)
-Follow these instructions to deploy the project on your local or cloud environment.
 
-📋 Prerequisites
-Oracle APEX Workspace: Access to an instance (e.g., apex.oracle.com).
 
-Database Version: Oracle 19c or 21c is recommended for full feature compatibility.
 
-⚙️ Installation Steps
-1. Database Schema Setup
-First, you need to build the "Engine" of the application by running the DDL scripts:
+🚀 How to Run & Test
+Follow these steps to deploy the project on your Oracle APEX instance:
 
+1️⃣ Prerequisites
+Access to an Oracle APEX Workspace.
+
+Oracle Database 19c or higher.
+
+2️⃣ Database Setup
 Navigate to SQL Workshop > SQL Scripts > Upload.
 
-Upload the file: /database/database_schema.sql.
+Upload and run database_schema.sql from the /database folder.
 
-Click Run to generate all tables, sequences, and PL/SQL triggers.
+This will create all necessary Tables, Sequences, and Triggers.
 
-2. Import Application
-Next, import the user interface and application logic:
-
+3️⃣ Application Import
 Go to App Builder > Import.
 
-Choose the file: /application/f248114.sql (or your exported filename).
+Upload the .sql file from the /application folder.
 
-Follow the wizard instructions. Important: Ensure you map the application to the same schema where you ran the database scripts.
-
-3. Execution
-Once the installation is complete, click Run Application.
-
-Use your workspace credentials to log in and explore the system.
-
-🛠️ Troubleshooting
-[!TIP]
+Follow the wizard to install the application in your schema.
 If you encounter any "Table not found" errors, double-check that the database_schema.sql script was executed successfully before importing the application.
