@@ -82,4 +82,34 @@ Through this project, I strengthened my understanding of:
 - PL/SQL procedural programming  
 - Backend automation  
 - Data integrity enforcement  
-- Bridging database logic with web applications  
+- Bridging database logic with web applications
+
+
+🚀 How to Run & Test
+To run this project on your own Oracle APEX instance, follow these steps:
+
+Prerequisites:
+
+Access to an Oracle APEX Workspace (either locally or on apex.oracle.com).
+
+Oracle Database 19c or higher is recommended.
+
+Database Setup:
+
+Go to SQL Workshop -> SQL Scripts -> Upload.
+
+Upload and run the database_schema.sql file located in the /database folder. This will create all necessary tables, triggers, and constraints.
+
+Import Application:
+
+Go to App Builder -> Import.
+
+Upload the .sql file located in the /application folder.
+
+Follow the installation wizard and make sure to associate it with the correct Schema.
+
+Run the App:
+
+Once imported, click the Run Application button.
+
+Log in using your APEX workspace credentials or any custom users defined in the logic.
