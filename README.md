@@ -84,32 +84,38 @@ Through this project, I strengthened my understanding of:
 - Data integrity enforcement  
 - Bridging database logic with web applications
 
+🚀 Getting Started (How to Run)
+Follow these instructions to deploy the project on your local or cloud environment.
 
-🚀 How to Run & Test
-To run this project on your own Oracle APEX instance, follow these steps:
+📋 Prerequisites
+Oracle APEX Workspace: Access to an instance (e.g., apex.oracle.com).
 
-Prerequisites:
+Database Version: Oracle 19c or 21c is recommended for full feature compatibility.
 
-Access to an Oracle APEX Workspace (either locally or on apex.oracle.com).
+⚙️ Installation Steps
+1. Database Schema Setup
+First, you need to build the "Engine" of the application by running the DDL scripts:
 
-Oracle Database 19c or higher is recommended.
+Navigate to SQL Workshop > SQL Scripts > Upload.
 
-Database Setup:
+Upload the file: /database/database_schema.sql.
 
-Go to SQL Workshop -> SQL Scripts -> Upload.
+Click Run to generate all tables, sequences, and PL/SQL triggers.
 
-Upload and run the database_schema.sql file located in the /database folder. This will create all necessary tables, triggers, and constraints.
+2. Import Application
+Next, import the user interface and application logic:
 
-Import Application:
+Go to App Builder > Import.
 
-Go to App Builder -> Import.
+Choose the file: /application/f248114.sql (or your exported filename).
 
-Upload the .sql file located in the /application folder.
+Follow the wizard instructions. Important: Ensure you map the application to the same schema where you ran the database scripts.
 
-Follow the installation wizard and make sure to associate it with the correct Schema.
+3. Execution
+Once the installation is complete, click Run Application.
 
-Run the App:
+Use your workspace credentials to log in and explore the system.
 
-Once imported, click the Run Application button.
-
-Log in using your APEX workspace credentials or any custom users defined in the logic.
+🛠️ Troubleshooting
+[!TIP]
+If you encounter any "Table not found" errors, double-check that the database_schema.sql script was executed successfully before importing the application.
